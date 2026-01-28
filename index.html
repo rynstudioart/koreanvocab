@@ -182,6 +182,7 @@ function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
   categories: ['Nouns','Verbs','Adjectives','Adverb'],
   words: [
+    {id:genId(),'category':'Verbs','korean':'춤추다','english':'to dance','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'받다','english':'to get','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'말하다','english':'to speak','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'듣다','english':'to listen','completed':false,'drawing':null},
@@ -2535,6 +2536,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
