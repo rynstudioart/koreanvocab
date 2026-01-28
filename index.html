@@ -182,6 +182,7 @@ function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
   categories: ['Nouns','Verbs','Adjectives','Adverb'],
   words: [
+    {id:genId(),'category':'Verbs','korean':'노력하다','english':'to try','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'머무르다','english':'to stay','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'찾다','english':'to find','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'요리하다','english':'to cook','completed':false,'drawing':null},
@@ -2542,6 +2543,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
