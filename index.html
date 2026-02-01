@@ -180,7 +180,7 @@ canvas{
 const STORAGE_KEY = 'kpw_data_v2';
 function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
-  categories: ['Nouns','Verbs','Adjectives','Adverb'],
+  categories: ['Nouns','Verbs','Adjectives','Adverb', 'Colors', 'House', 'Body' ],
   words: [
     {id:genId(),'category':'Verbs','korean':'싱겁다','english':'to be bland / to be not salty enough','completed':false,'drawing':null},
     {id:genId(),'category':'Verbs','korean':'쓰다','english':'to be bitter','completed':false,'drawing':null},
@@ -2578,6 +2578,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
