@@ -180,7 +180,7 @@ canvas{
 const STORAGE_KEY = 'kpw_data_v2';
 function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
-  categories: ['Verbs','Adjectives','Adverb','Work','Food', 'Colors', 'House', 'Body','Nature','Weather','Time','Animals', 'Places','Abstract','Technology','People','Transportation','Media','Culture & Arts','Question Words','Education','Travel','Pronouns'],
+  categories: ['Verbs','Nature','Weather','Time','People','Technology','Culture & Arts','Question Words','Education','Travel','Abstract','Adjectives','Clothing','Transportation','Adverb','Work','Food', 'Colors', 'House', 'Body','Animals', 'Places','Media','Pronouns'],
   words: [
    // ===================== VERBS =====================
 {id:genId(),'category':'Verbs','korean':'싱겁다','english':'to be bland','completed':false,'drawing':null},
@@ -778,6 +778,45 @@ const defaultState = {
 {id:genId(),'category':'Time','korean':'곧','english':'Soon','completed':false,'drawing':null},
 {id:genId(),'category':'Time','korean':'세','english':'Age (years)','completed':false,'drawing':null},
 {id:genId(),'category':'Time','korean':'오월','english':'May','completed':false,'drawing':null},
+   {id:genId(),'category':'Time','korean':'년','english':'Year','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'세기','english':'Century','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'지난해','english':'Last year','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'밤','english':'Night','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'최근','english':'Recently','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'대','english':'Era','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'과거','english':'The past','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'살','english':'Years old','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'오후','english':'Afternoon','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'옛날','english':'Ancient times','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'이날','english':'This day','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'저녁','english':'Evening','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'그날','english':'That day','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'올해','english':'This year','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'해','english':'Year','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'회','english':'Round, time','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'개월','english':'Month (counter)','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'말','english':'End','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'사월','english':'April','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'삼월','english':'March','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'유월','english':'June','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'구월','english':'September','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'작년','english':'Last year','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'내년','english':'Next year','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'내일','english':'Tomorrow','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'날','english':'Day','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'날짜','english':'Date','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'낮','english':'Daytime','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'나흘','english':'Four days','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'기간','english':'Period','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'그날','english':'That day','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'그저께','english':'Day before yesterday','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'밤','english':'Night','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'아침','english':'Morning','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'하루','english':'One day','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'시대','english':'Era','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'세기','english':'Century','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'시간','english':'Time','completed':false,'drawing':null},
+{id:genId(),'category':'Time','korean':'년대','english':'Decade','completed':false,'drawing':null}, 
 
 // ===================== PEOPLE =====================
 {id:genId(),'category':'People','korean':'친구','english':'Friend','completed':false,'drawing':null},
@@ -972,47 +1011,9 @@ const defaultState = {
 {id:genId(),'category':'Travel','korean':'출발','english':'Departure','completed':false,'drawing':null},
 {id:genId(),'category':'Travel','korean':'예약','english':'Reservation','completed':false,'drawing':null},
 
-// ===================== Time =====================
 
-{id:genId(),'category':'Time','korean':'년','english':'Year','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'세기','english':'Century','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'지난해','english':'Last year','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'밤','english':'Night','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'최근','english':'Recently','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'대','english':'Era','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'과거','english':'The past','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'살','english':'Years old','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'오후','english':'Afternoon','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'옛날','english':'Ancient times','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'이날','english':'This day','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'저녁','english':'Evening','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'그날','english':'That day','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'올해','english':'This year','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'해','english':'Year','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'회','english':'Round, time','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'개월','english':'Month (counter)','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'말','english':'End','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'사월','english':'April','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'삼월','english':'March','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'유월','english':'June','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'구월','english':'September','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'작년','english':'Last year','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'내년','english':'Next year','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'내일','english':'Tomorrow','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'날','english':'Day','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'날짜','english':'Date','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'낮','english':'Daytime','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'나흘','english':'Four days','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'기간','english':'Period','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'그날','english':'That day','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'그저께','english':'Day before yesterday','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'밤','english':'Night','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'아침','english':'Morning','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'하루','english':'One day','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'시대','english':'Era','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'세기','english':'Century','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'시간','english':'Time','completed':false,'drawing':null},
-{id:genId(),'category':'Time','korean':'년대','english':'Decade','completed':false,'drawing':null},
+
+
 
 
 
@@ -1453,7 +1454,7 @@ const defaultState = {
 {id:genId(),'category':'House','korean':'냄비','english':'pot','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'프라이팬','english':'frying pan','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'싱크대','english':'sink','completed':false,'drawing':null},
-{id:genId(),'category':'Garden','korean':'꽃','english':'flower','completed':false,'drawing':null},
+{id:genId(),'category':'House','korean':'꽃','english':'flower','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'나무','english':'tree','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'잔디','english':'grass','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'화분','english':'flower pot','completed':false,'drawing':null},
@@ -1886,6 +1887,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
