@@ -186,7 +186,7 @@ canvas{
 
 <script>
 (() => {
-const STORAGE_KEY = 'kpw_data_v4';
+const STORAGE_KEY = 'kpw_data_v5';
 function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
   categories: ['Verbs','Nature','Weather','Time','People','Technology','Culture & Arts','Question Words','Education','Travel','Nouns','Adjectives','Clothing','Transportation','Adverbs','Work','Food', 'Colors', 'House', 'Body','Animals', 'Places','Media','Pronouns'],
@@ -658,17 +658,143 @@ const defaultState = {
 {id:genId(),'category':'Culture & Arts','korean':'시','english':'Poetry','completed':false,'drawing':null},
 {id:genId(),'category':'Culture & Arts','korean':'연극','english':'Drama, a play','completed':false,'drawing':null},
 {id:genId(),'category':'Culture & Arts','korean':'소설','english':'Novel','completed':false,'drawing':null},
-
-
+{id:genId(),'category':'Culture & Arts','korean':'책','english':'Book','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'영화','english':'Cinema','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'공연','english':'Show','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'티켓','english':'Ticket','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'예술','english':'Art','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'문화','english':'Culture','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'박물관','english':'Museum','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'전시회','english':'Exhibition','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'갤러리','english':'Gallery','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'극장','english':'Theater','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'연극','english':'Play','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'뮤지컬','english':'Musical','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'콘서트','english':'Concert','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'오페라','english':'Opera','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'발레','english':'Ballet','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'문학','english':'Literature','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'소설','english':'Novel','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'시','english':'Poetry','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'작가','english':'Author','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'감독','english':'Director','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'배우','english':'Actor','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'여배우','english':'Actress','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'화가','english':'Painter','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'조각','english':'Sculpture','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'사진','english':'Photography','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'카메라','english':'Camera','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'대본','english':'Script','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'무대','english':'Stage','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'관객','english':'Audience','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'입장권','english':'Admission','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'상영','english':'Screening','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'개봉','english':'Premiere','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'리허설','english':'Rehearsal','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'포스터','english':'Poster','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'비평','english':'Criticism','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'수상','english':'Award','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'축제','english':'Festival','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'전통','english':'Tradition','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'유산','english':'Heritage','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'민속','english':'Folklore','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'공예','english':'Craft','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'디자인','english':'Design','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'창작','english':'Creation','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'출판','english':'Publishing','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'서점','english':'Bookstore','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'도서관','english':'Library','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'낭독','english':'Reading','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'사인회','english':'Book Signing','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'단편 영화','english':'Short Film','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'다큐멘터리','english':'Documentary','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'제작자','english':'Producer','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'무대 디자인','english':'Stage Design','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'녹음실','english':'Recording Studio','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'이젤','english':'Easel','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'회화','english':'Painting','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'대사','english':'Dialogue','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'안무','english':'Choreography','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'지휘자','english':'Conductor','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'각본가','english':'Screenwriter','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'편집자','english':'Editor','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'촬영 감독','english':'Cinematographer','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'음향','english':'Sound','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'조명','english':'Lighting','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'의상','english':'Costume','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'분장','english':'Makeup','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'리메이크','english':'Remake','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'원작','english':'Original Work','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'초연','english':'First Performance','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'독백','english':'Monologue','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'합창','english':'Choir','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'오케스트라','english':'Orchestra','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'악기','english':'Instrument','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'캔버스','english':'Canvas','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'붓','english':'Brush','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'물감','english':'Paint','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'스케치','english':'Sketch','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'초상화','english':'Portrait','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'풍경화','english':'Landscape Painting','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'추상화','english':'Abstract Art','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'전각','english':'Seal Carving','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'설치 미술','english':'Installation Art','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'퍼포먼스 아트','english':'Performance Art','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'디지털 아트','english':'Digital Art','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'애니메이션','english':'Animation','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'성우','english':'Voice Actor','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'더빙','english':'Dubbing','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'상영 시간','english':'Running Time','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'예매','english':'Reservation','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'좌석','english':'Seat','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'커튼콜','english':'Curtain Call','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'비주얼 효과','english':'Visual Effects','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'특수 효과','english':'Special Effects','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'예고편','english':'Trailer','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'촬영장','english':'Film Set','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'무대 감독','english':'Stage Manager','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'예술가','english':'Artist','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'평론가','english':'Critic','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'문화 행사','english':'Cultural Event','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'창의력','english':'Creativity','completed':false,'drawing':null},
+{id:genId(),'category':'Culture & Arts','korean':'작품','english':'Artwork','completed':false,'drawing':null},
 
 // ===================== QUESTION WORDS =====================
+{id:genId(),'category':'Question Words','korean':'어떻게','english':'How','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'왜','english':'Why','completed':false,'drawing':null},
 {id:genId(),'category':'Question Words','korean':'언제','english':'When','completed':false,'drawing':null},
 {id:genId(),'category':'Question Words','korean':'어디','english':'Where','completed':false,'drawing':null},
-{id:genId(),'category':'Question Words','korean':'왜','english':'Why','completed':false,'drawing':null},
 {id:genId(),'category':'Question Words','korean':'누구','english':'Who','completed':false,'drawing':null},
 {id:genId(),'category':'Question Words','korean':'무엇','english':'What','completed':false,'drawing':null},
-{id:genId(),'category':'Question Words','korean':'얼마나','english':'How much','completed':false,'drawing':null},
-
+{id:genId(),'category':'Question Words','korean':'어느','english':'Which','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'몇','english':'How many','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'몇 시','english':'What time','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'얼마','english':'How much','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'얼마나 자주','english':'How often','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'얼마 동안','english':'How long','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어떤','english':'What kind of','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어디에','english':'Where to','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어디에서','english':'Where from','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'누구의','english':'Whose','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'누구를','english':'Whom','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'무슨','english':'What (specific)','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어디로','english':'Where to (direction)','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어디까지','english':'Until where','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어째서','english':'For what reason','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어찌','english':'In what way','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어찌하여','english':'How come','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'언제부터','english':'Since when','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'언제까지','english':'Until when','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'몇 번','english':'How many times','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'몇 살','english':'How old','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'무슨 일','english':'What happened','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'무슨 이유','english':'For what reason','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어느 쪽','english':'Which side','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어느 나라','english':'Which country','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어느 때','english':'At what time','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'얼마짜리','english':'How much (price)','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'어디쯤','english':'About where','completed':false,'drawing':null},
+{id:genId(),'category':'Question Words','korean':'누구랑','english':'With whom','completed':false,'drawing':null},
 
 // ===================== Education =====================
 
@@ -719,7 +845,41 @@ const defaultState = {
 {id:genId(),'category':'Travel','korean':'도착','english':'Arrival','completed':false,'drawing':null},
 {id:genId(),'category':'Travel','korean':'출발','english':'Departure','completed':false,'drawing':null},
 {id:genId(),'category':'Travel','korean':'예약','english':'Reservation','completed':false,'drawing':null},
-
+{id:genId(),'category':'Travel','korean':'항공권','english':'Flight Ticket','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'탑승권','english':'Boarding Pass','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'비자','english':'Visa','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'수하물','english':'Baggage','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'기내 수하물','english':'Carry-on','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'체크인','english':'Check-in','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'탑승구','english':'Gate','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'좌석','english':'Seat','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'환승','english':'Transfer','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'직항','english':'Direct Flight','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'관광객','english':'Tourist','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'여행 가방','english':'Suitcase','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'안내소','english':'Information Desk','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'객실','english':'Room','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'체크아웃','english':'Check-out','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'여관','english':'Inn','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'호스텔','english':'Hostel','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'리조트','english':'Resort','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'해변','english':'Beach','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'산','english':'Mountain','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'섬','english':'Island','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'도시','english':'City','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'시골','english':'Countryside','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'기차','english':'Train','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'기차역','english':'Train Station','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'버스','english':'Bus','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'지하철','english':'Subway','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'고속도로','english':'Highway','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'여행 보험','english':'Travel Insurance','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'환전','english':'Currency Exchange','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'현지 통화','english':'Local Currency','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'가이드','english':'Guide','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'투어','english':'Tour','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'여행 일정','english':'Itinerary','completed':false,'drawing':null},
+{id:genId(),'category':'Travel','korean':'기념품','english':'Souvenir','completed':false,'drawing':null},
 
 
 
@@ -874,7 +1034,26 @@ const defaultState = {
 {id:genId(),'category':'Pronouns','korean':'그곳','english':'There','completed':false,'drawing':null},
 {id:genId(),'category':'Pronouns','korean':'그쪽','english':'That side','completed':false,'drawing':null},
 {id:genId(),'category':'Pronouns','korean':'그분','english':'That person (honorific)','completed':false,'drawing':null},
-
+{id:genId(),'category':'Pronouns','korean':'너','english':'You (informal)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'당신','english':'You (formal)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'저','english':'I (formal)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'저희','english':'We (formal)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'너희','english':'You (plural)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'그녀','english':'She','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'이것','english':'This thing','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'그것','english':'That thing','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'저것','english':'That (over there)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'여기','english':'Here','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'저기','english':'Over there','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'이쪽','english':'This side','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'저쪽','english':'That side (over there)','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'누구','english':'Who','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'무엇','english':'What','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'자신','english':'Oneself','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'모두','english':'Everyone','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'누군가','english':'Someone','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'아무도','english':'No one','completed':false,'drawing':null},
+{id:genId(),'category':'Pronouns','korean':'누구나','english':'Anyone','completed':false,'drawing':null},
 
 // ===================== Adverbs =====================
 
@@ -920,51 +1099,307 @@ const defaultState = {
 
 
 // ===================== Adjectives =====================
-{id:genId(),'category':'Adjectives','korean':'젊다','english':'To be young, youthful','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'강하다','english':'To be strong','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'최고','english':'The best','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'아프다','english':'To hurt','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'적다','english':'To be few','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'다양하다','english':'To be diverse','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'빠르다','english':'Be fast','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'마지막','english':'Last','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'가깝다','english':'Close','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'첫','english':'First','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'가능하다','english':'possible','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'같다','english':'to be similar','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'건강하다','english':'healthy','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'고맙다','english':'thankful','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'괜찮다','english':'okay','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'귀엽다','english':'cute','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'그립다','english':'to miss (someone)','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'기쁘다','english':'happy','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'길다','english':'long','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'깊다','english':'deep','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'깨끗하다','english':'clean','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'나쁘다','english':'bad','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'낮다','english':'low','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'넓다','english':'wide','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'높다','english':'high','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'다르다','english':'different','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'더럽다','english':'dirty','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'덥다','english':'hot (weather)','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'무섭다','english':'scary','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'미안하다','english':'sorry','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'빠르다','english':'fast','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'비싸다','english':'expensive','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'슬프다','english':'sad','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'싫다','english':'to dislike','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'아프다','english':'sick, painful','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'어렵다','english':'difficult','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'예쁘다','english':'pretty','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'이상하다','english':'strange','completed':false,'drawing':null},
 {id:genId(),'category':'Adjectives','korean':'작다','english':'small','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'좋다','english':'good','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'춥다','english':'cold (weather)','completed':false,'drawing':null},
 {id:genId(),'category':'Adjectives','korean':'크다','english':'big','completed':false,'drawing':null},
-{id:genId(),'category':'Adjectives','korean':'힘들다','english':'tired, difficult','completed':false,'drawing':null},
 
+{id:genId(),'category':'Adjectives','korean':'높다','english':'high','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'낮다','english':'low','completed':false,'drawing':null},
 
+{id:genId(),'category':'Adjectives','korean':'길다','english':'long','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'짧다','english':'short','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'넓다','english':'wide','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'좁다','english':'narrow','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'빠르다','english':'fast','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'느리다','english':'slow','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'덥다','english':'hot (weather)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'춥다','english':'cold (weather)','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'따뜻하다','english':'warm','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'차갑다','english':'cold (object)','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깨끗하다','english':'clean','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'더럽다','english':'dirty','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'좋다','english':'good','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'나쁘다','english':'bad','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'행복하다','english':'happy','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'슬프다','english':'sad','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'강하다','english':'strong','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'약하다','english':'weak','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'비싸다','english':'expensive','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'싸다','english':'cheap','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'어렵다','english':'difficult','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'쉽다','english':'easy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'밝다','english':'bright','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'어둡다','english':'dark','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'젊다','english':'young','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'늙다','english':'old','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'건강하다','english':'healthy','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'아프다','english':'sick','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'친절하다','english':'kind','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불친절하다','english':'unkind','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'조용하다','english':'quiet','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'시끄럽다','english':'noisy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깊다','english':'deep','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'얕다','english':'shallow','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'적다','english':'few','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'많다','english':'many','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'가능하다','english':'possible','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불가능하다','english':'impossible','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'같다','english':'similar','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'다르다','english':'different','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'귀엽다','english':'cute','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무섭다','english':'scary','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'힘들다','english':'tired','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'상쾌하다','english':'refreshed','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'첫','english':'first','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'마지막','english':'last','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'예쁘다','english':'pretty','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'못생기다','english':'ugly','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'재미있다','english':'interesting','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'재미없다','english':'boring','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'친하다','english':'close (relationship)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'어색하다','english':'awkward','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'배고프다','english':'hungry','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'배부르다','english':'full','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'부지런하다','english':'diligent','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'게으르다','english':'lazy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'똑똑하다','english':'smart','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'멍청하다','english':'stupid','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'안전하다','english':'safe','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'위험하다','english':'dangerous','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'부드럽다','english':'soft','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'딱딱하다','english':'hard','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'가볍다','english':'light (weight)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무겁다','english':'heavy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'시원하다','english':'cool (refreshing)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'답답하다','english':'frustrating','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'자유롭다','english':'free','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'답답하다','english':'restricted','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'빠듯하다','english':'tight (schedule/budget)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'여유롭다','english':'relaxed','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'시다','english':'sour','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'달다','english':'sweet','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'짜다','english':'salty','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'싱겁다','english':'bland','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'맵다','english':'spicy','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'느끼하다','english':'greasy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'두껍다','english':'thick','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'얇다','english':'thin','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'높이다','english':'raised','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'낮추다','english':'lowered','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'복잡하다','english':'complicated','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'단순하다','english':'simple','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'공평하다','english':'fair','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불공평하다','english':'unfair','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'진지하다','english':'serious','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'장난스럽다','english':'playful','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깨다','english':'awake','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'졸리다','english':'sleepy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'부자다','english':'rich','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'가난하다','english':'poor','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'빠지다','english':'thin (person)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'뚱뚱하다','english':'fat','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'피곤하다','english':'tired','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'개운하다','english':'rested','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'의미있다','english':'meaningful','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'의미없다','english':'meaningless','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'반짝이다','english':'sparkling','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'빛바래다','english':'faded','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'자신감 있다','english':'confident','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불안하다','english':'anxious','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'침착하다','english':'calm','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'초조하다','english':'nervous','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'용감하다','english':'brave','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'겁이 많다','english':'cowardly','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'친근하다','english':'friendly','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'냉정하다','english':'cold-hearted','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'열정적이다','english':'passionate','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무관심하다','english':'indifferent','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'성공적이다','english':'successful','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'실패하다','english':'unsuccessful','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'현명하다','english':'wise','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'어리석다','english':'foolish','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'유명하다','english':'famous','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무명이다','english':'unknown','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'현대적이다','english':'modern','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'전통적이다','english':'traditional','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'특별하다','english':'special','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'평범하다','english':'ordinary','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'완벽하다','english':'perfect','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불완전하다','english':'imperfect','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'긍정적이다','english':'positive','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'부정적이다','english':'negative','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'활발하다','english':'active','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'소극적이다','english':'passive','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'정직하다','english':'honest','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'거짓되다','english':'dishonest','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깔끔하다','english':'neat','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'지저분하다','english':'messy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'빠짐없다','english':'thorough','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'대충하다','english':'careless','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'풍부하다','english':'abundant','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'부족하다','english':'insufficient','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'명확하다','english':'clear','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'모호하다','english':'vague','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'강렬하다','english':'intense','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'미약하다','english':'weak (intensity)','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'사랑스럽다','english':'lovely','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'사랑없다','english':'without love','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'희망차다','english':'hopeful','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'절망적이다','english':'hopeless','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'공손하다','english':'polite','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무례하다','english':'rude','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'겸손하다','english':'humble','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'거만하다','english':'arrogant','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'성실하다','english':'sincere','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불성실하다','english':'insincere','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'따분하다','english':'dull','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'흥미롭다','english':'fascinating','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'차분하다','english':'composed','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'흥분하다','english':'excited','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'관대하다','english':'generous','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'인색하다','english':'stingy','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'화가 나다','english':'angry','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'평온하다','english':'peaceful','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'화려하다','english':'gorgeous','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'수수하다','english':'plain','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깨다','english':'awake','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'잠들다','english':'asleep','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'열리다','english':'open','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'닫히다','english':'closed','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'강력하다','english':'powerful','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무력하다','english':'powerless','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'희귀하다','english':'rare','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'흔하다','english':'common','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'빠지지 않다','english':'solid','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'부서지기 쉽다','english':'fragile','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깨끗이 정리되다','english':'organized','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'엉망이다','english':'disorganized','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'독특하다','english':'unique','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'평범하다','english':'average','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'정확하다','english':'accurate','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'부정확하다','english':'inaccurate','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'깨어 있다','english':'alert','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'멍하다','english':'dazed','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'신선하다','english':'fresh','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'상하다','english':'rotten','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'풍성하다','english':'full (hair)','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'비어 있다','english':'empty','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'튼튼하다','english':'sturdy','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'약하다','english':'fragile (weak)','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'빠듯하지 않다','english':'spacious','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'빽빽하다','english':'crowded','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'적극적이다','english':'proactive','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'소극적이다','english':'inactive','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'영리하다','english':'clever','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'둔하다','english':'dull (slow)','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'감동적이다','english':'touching','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'무감각하다','english':'emotionless','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'자랑스럽다','english':'proud','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'창피하다','english':'ashamed','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'편안하다','english':'comfortable','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'불편하다','english':'uncomfortable','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'낙관적이다','english':'optimistic','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'비관적이다','english':'pessimistic','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'섬세하다','english':'delicate','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'거칠다','english':'rough','completed':false,'drawing':null},
+
+{id:genId(),'category':'Adjectives','korean':'신뢰하다','english':'trustworthy','completed':false,'drawing':null},
+{id:genId(),'category':'Adjectives','korean':'의심스럽다','english':'suspicious','completed':false,'drawing':null},
 
 // ===================== CLOTHING =====================
 {id:genId(),'category':'Clothing','korean':'옷','english':'Clothes','completed':false,'drawing':null},
@@ -973,7 +1408,60 @@ const defaultState = {
 {id:genId(),'category':'Clothing','korean':'옷','english':'clothes','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'신발','english':'shoes','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'바지','english':'pants','completed':false,'drawing':null},
-{id:genId(),'category':'Clothing','korean':'셔츠','english':'shirt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'티셔츠','english':'t-shirt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'블라우스','english':'blouse','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'치마','english':'skirt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'원피스','english':'dress','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'청바지','english':'jeans','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'반바지','english':'shorts','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'코트','english':'coat','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'재킷','english':'jacket','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'점퍼','english':'jumper','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'스웨터','english':'sweater','completed':false,'drawing':null},
+
+{id:genId(),'category':'Clothing','korean':'후드티','english':'hoodie','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'가디건','english':'cardigan','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'정장','english':'suit','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'넥타이','english':'tie','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'양말','english':'socks','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'스타킹','english':'stockings','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'부츠','english':'boots','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'샌들','english':'sandals','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'슬리퍼','english':'slippers','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'운동화','english':'sneakers','completed':false,'drawing':null},
+
+{id:genId(),'category':'Clothing','korean':'모자','english':'hat','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'캡','english':'cap','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'목도리','english':'scarf','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'장갑','english':'gloves','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'벨트','english':'belt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'잠옷','english':'pajamas','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'속옷','english':'underwear','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'브래지어','english':'bra','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'팬티','english':'underpants','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'조끼','english':'vest','completed':false,'drawing':null},
+
+{id:genId(),'category':'Clothing','korean':'수영복','english':'swimsuit','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'비키니','english':'bikini','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'트레이닝복','english':'tracksuit','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'레깅스','english':'leggings','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'코트','english':'overcoat','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'패딩','english':'padded jacket','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'와이셔츠','english':'dress shirt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'민소매','english':'sleeveless shirt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'긴팔','english':'long-sleeve shirt','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'반팔','english':'short-sleeve shirt','completed':false,'drawing':null},
+
+{id:genId(),'category':'Clothing','korean':'앞치마','english':'apron','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'유니폼','english':'uniform','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'교복','english':'school uniform','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'잠바','english':'windbreaker','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'가운','english':'gown','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'드레스','english':'gown','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'정장 바지','english':'dress pants','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'청자켓','english':'denim jacket','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'트렌치코트','english':'trench coat','completed':false,'drawing':null},
+{id:genId(),'category':'Clothing','korean':'털코트','english':'fur coat','completed':false,'drawing':null},
 
 
 
@@ -1086,7 +1574,6 @@ const defaultState = {
 
 
 // ===================== HOUSE =====================
-// ===================== House =====================
 {id:genId(),'category':'House','korean':'거실','english':'Living room','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'침실','english':'Bedroom','completed':false,'drawing':null},
 {id:genId(),'category':'House','korean':'부엌','english':'Kitchen','completed':false,'drawing':null},
@@ -1523,6 +2010,30 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
