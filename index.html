@@ -57,6 +57,11 @@ canvas{
     width: 100vw;
     border-radius: 0;
     padding:16px;
+    #wordsGrid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 8px;
+}
   }
   button,input,select{width:100%;box-sizing:border-box;text-align:center;}
   .word-btn{flex:1 1 45%;}
@@ -79,10 +84,7 @@ canvas{
 #toast.show {
   opacity: 1;
 }
-.words-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+
 }
   
 
@@ -1516,6 +1518,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
