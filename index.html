@@ -177,7 +177,7 @@ canvas{
 
 <script>
 (() => {
-const STORAGE_KEY = 'kpw_data_v2';
+const STORAGE_KEY = 'kpw_data_v3';
 function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
   categories: ['Verbs','Nature','Weather','Time','People','Technology','Culture & Arts','Question Words','Education','Travel','Nouns','Adjectives','Clothing','Transportation','Adverb','Work','Food', 'Colors', 'House', 'Body','Animals', 'Places','Media','Pronouns'],
@@ -1887,6 +1887,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
