@@ -177,7 +177,7 @@ canvas{
 
 <script>
 (() => {
-const STORAGE_KEY = 'kpw_data_v3';
+const STORAGE_KEY = 'kpw_data_v2';
 function genId(){ return 'w_' + Math.random().toString(36).slice(2,9); }
 const defaultState = {
   categories: ['Verbs','Nature','Weather','Time','People','Technology','Culture & Arts','Question Words','Education','Travel','Nouns','Adjectives','Clothing','Transportation','Adverb','Work','Food', 'Colors', 'House', 'Body','Animals', 'Places','Media','Pronouns'],
@@ -1280,15 +1280,13 @@ const defaultState = {
 
 // ===================== CLOTHING =====================
 {id:genId(),'category':'Clothing','korean':'옷','english':'Clothes','completed':false,'drawing':null},
-{id:genId(),'category':'Clothing','korean':'옷','english':'clothes','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'신발','english':'shoes','completed':false,'drawing':null},
-{id:genId(),'category':'Clothing','korean':'바지','english':'pants','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'셔츠','english':'shirt','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'옷','english':'clothes','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'신발','english':'shoes','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'바지','english':'pants','completed':false,'drawing':null},
 {id:genId(),'category':'Clothing','korean':'셔츠','english':'shirt','completed':false,'drawing':null},
-,
+
 
 
 
@@ -1307,8 +1305,6 @@ const defaultState = {
 {id:genId(),'category':'Work','korean':'투자','english':'Investment','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'임금','english':'Wages','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'공업','english':'Industry','completed':false,'drawing':null},
-{id:genId(),'category':'Work','korean':'회사','english':'company','completed':false,'drawing':null},
-{id:genId(),'category':'Work','korean':'직원','english':'employee','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'사장','english':'boss','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'회의','english':'meeting','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'일','english':'work','completed':false,'drawing':null},
@@ -1318,14 +1314,11 @@ const defaultState = {
 {id:genId(),'category':'Work','korean':'직원','english':'employee','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'사장','english':'boss','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'회의','english':'meeting','completed':false,'drawing':null},
-{id:genId(),'category':'Work','korean':'일','english':'work','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'직업','english':'job, occupation','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'기능','english':'function','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'학교','english':'school','completed':false,'drawing':null},
-{id:genId(),'category':'Work','korean':'회사','english':'company','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'선생님','english':'teacher','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'학생','english':'student','completed':false,'drawing':null},
-{id:genId(),'category':'Work','korean':'일','english':'work','completed':false,'drawing':null},
 {id:genId(),'category':'Work','korean':'공부','english':'study','completed':false,'drawing':null},
 
 
@@ -1887,6 +1880,7 @@ window.addEventListener('beforeunload',()=>saveState());
 
 </body>
 </html>
+
 
 
 
